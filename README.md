@@ -30,7 +30,7 @@
 
 ## Getting Started
 
-1. Click on the "Open in Dev Containers" badge above to open the project in a Dev Container.
+1. Click on the "Open in Dev Containers" badge above to open the project in a Dev Container. If this does not work, clone the repository by following your usual git workflow, then open it in VS Code.
 2. Copy `.env.template` to `.env` and update the values.
 3. Rebuid the container by running the `Remote-Containers: Rebuild Container` command.
 4. Open a terminal in VS Code and run the following command:
