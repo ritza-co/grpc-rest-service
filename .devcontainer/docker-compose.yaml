@@ -4,9 +4,6 @@ services:
     build:
       context: .
       dockerfile: .devcontainer/Dockerfile
-    env_file:
-      - path: ./env
-        required: false
     volumes:
       - ..:/workspaces:cached
     command: /bin/sh -c "while sleep 1000; do :; done"

@@ -15,6 +15,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/reflection"
+	"github.com/joho/godotenv"
 )
 
 type barServer struct {
@@ -220,6 +221,10 @@ func (s *barServer) GetDrink(ctx context.Context, req *bar.GetDrinkRequest) (*ba
 var openaiAPIKey string
 
 func main() {
+	err := godotenv.Load()
+  	if err != nil {
+    	log.Fatal("Error loading .env file")
+  	}
 	port := 50051
 	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", port))
 	if err != nil {
