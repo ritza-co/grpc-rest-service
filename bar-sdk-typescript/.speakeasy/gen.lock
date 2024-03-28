@@ -1,0 +1,65 @@
+lockVersion: 2.0.0
+id: ad903fa0-87a7-46ea-994b-00675c17f5f3
+management:
+  docChecksum: bfa131afb3c43b8eb282c7efdcb9f5c4
+  docVersion: 1.0.0
+  speakeasyVersion: 1.228.0
+  generationVersion: 2.292.0
+  releaseVersion: 0.0.1
+  configChecksum: 3fdcddd4e24a09bb4f36044397f9e987
+features:
+  typescript:
+    core: 3.7.0
+    globalServerURLs: 2.82.4
+    responseFormat: 0.2.3
+generatedFiles:
+  - src/sdk/sdk.ts
+  - .eslintrc.js
+  - .npmignore
+  - RUNTIMES.md
+  - package.json
+  - src/index.ts
+  - src/lib/base64.ts
+  - src/lib/config.ts
+  - src/lib/encodings.ts
+  - src/lib/http.ts
+  - src/lib/retries.ts
+  - src/lib/schemas.ts
+  - src/lib/sdks.ts
+  - src/lib/security.ts
+  - src/lib/url.ts
+  - src/sdk/index.ts
+  - src/models/errors/sdkerror.ts
+  - src/models/errors/sdkvalidationerror.ts
+  - src/types/blobs.ts
+  - src/types/index.ts
+  - src/types/operations.ts
+  - src/types/rfcdate.ts
+  - tsconfig.json
+  - src/models/operations/createdrink.ts
+  - src/models/operations/getdrink.ts
+  - src/models/components/error.ts
+  - src/models/components/drinkresponse.ts
+  - src/models/components/httpmetadata.ts
+  - src/models/components/ingredientsrequest.ts
+  - src/models/components/drinkreciperesponse.ts
+  - src/models/components/ingredientquantity.ts
+  - src/models/components/drinknamerequest.ts
+  - src/models/errors/index.ts
+  - src/models/operations/index.ts
+  - src/models/components/index.ts
+  - docs/models/operations/createdrinkresponse.md
+  - docs/models/operations/getdrinkresponse.md
+  - docs/models/components/errort.md
+  - docs/models/components/drinkresponse.md
+  - docs/models/components/httpmetadata.md
+  - docs/models/components/ingredientsrequest.md
+  - docs/models/components/drinkreciperesponse.md
+  - docs/models/components/ingredientquantity.md
+  - docs/models/components/drinknamerequest.md
+  - docs/sdks/sdk/README.md
+  - USAGE.md
+  - .gitattributes
+  - src/hooks/hooks.ts
+  - src/hooks/types.ts
+  - src/hooks/index.ts
