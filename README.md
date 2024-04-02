@@ -81,6 +81,34 @@ speakeasy generate sdk \
 
 7. Continue from step 4 in the [Getting Started](#getting-started) section.
 
+## Testing
+
+We can test the gRPC and gRPC-Gateway services using `grpcurl` and `curl`.
+
+### Testing with gRPCurl
+
+Run the following commands to test the gRPC service:
+
+```bash
+# Create a drink
+grpcurl -plaintext -d '{"ingredients_request": {"ingredients": ["Gin", "Tonic water", "Lime juice"]}}' localhost:50051 bar.Bar/CreateDrink
+
+# Get the drink
+grpcurl -plaintext -d '{"drink_name_request": {"name": "Pan Galactic Gargle Blaster"}}' localhost:50051 bar.Bar/GetDrink
+```
+
+### Testing with cURL
+
+Run the following commands to test the gRPC-Gateway service:
+
+```bash
+# Create a drink
+curl -X POST -H "Content-Type: application/json" -d '{"ingredients": ["Gin", "Tonic water", "Lime juice"]}' http://localhost:8080/create-drink
+
+# Get the drink
+curl -X POST -H "Content-Type: application/json" -d '{"name": "Pan Galactic Gargle Blaster"}' http://localhost:8080/get-drink
+```
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
